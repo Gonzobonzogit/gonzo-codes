@@ -1,54 +1,118 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8"/>
-    <meta name="viewport"> content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0"/>
     <title>Code Gonzo</title>
   </head>
   <body>
     <header>
-      <h1>Jon "gonzo" Kuegel</h1>
-      <h3>Full-Stack Developer in training</h3>
-      <span>Navigate to:</span> <a href="https://github.com/Gonzobonzogit">Github</a>
+      <h1 class="name">Jon "gonzo" Kuegel</h1>
+      <h3 class="lgndInDaM8king">Full-Stack Developer in training</h3>
     </header>
 
-    <div class="bio">
-      <h4>About Me</h4>
-      <img src="images/headshot.jpeg">
-      <p>Hello, thank you for taking the time to take a look at my project portfolio. My name is Jonathan, but my friends call me gonzo. I am a 90's baby born in 95. I had a rocky and turblent youth.  In the past 2 years, I haver made some major changes in my life, and have been on a much stronger path. I started using Linux last year, during that transition i started to teach myself HTML. From there it was something i knew i really enjoyed and understood. No right around a year later, I know HTML, CSS, JavaScript, NodeJS, ExpressJS, a tiny bit of SQL. Below this introduction are some of the examples i am most proud of.
+    <div class="bio-container">
+
+      <img src="../images/headshot.jpeg" class="selfie" width="150" height="150">
+      <h4 class="description">About Me</h4>
+      <p class="bio">Hello, thank you for taking the time to take a look at my project portfolio. My name is Jonathan, but my friends call me Gonzo. I am a 90's baby born in '95. I had a rocky and turblent youth.  In the past two years, I have made some major changes in my life, and have been on a much stronger path. I started using Linux last year, during that transition I started to teach myself HTML. From there it was something I knew I really enjoyed and understood. Now, right around a year later, I know HTML, CSS, JavaScript, NodeJS, ExpressJS, a tiny bit of SQL.</p>
+      <h5 class="hobbies">Things I enjoy:</h5>
+      <p>Some of the things I enjoy in my free time are:</p>
+      <ol>
+        <li>Building Computers</li>
+        <li>Playing Video Games</li>
+        <li> Listening to Music</li>
+        <li>Warhammer 40k</li>
+        <li>Firearms/Target Shooting</li>
+      </ol>
     </div>
     <div class="contacts">
-      <a href="https://github.com/gonzobonzogit>Github</a>
+      <h5>To Contact Me:</h5>
+      <p> Phone: 270-315-6746</p>
+      <a href="https://github.com/gonzobonzogit>Github">GitHub</a>
       <p>Email: gonzobomba@proton.me</p>
     </div>
-
-
+    <img  class="sticker" src="../images/look-at-em.png" height="250" width="400">
     <div class="projects">
       <h2>Solo Projects</h2>
       <p>The following are projects that i have worked on by myself, and put together for personal or public use.</p>
-      <li>
-        <ul><a href="https://github.com/Gonzobonzogit/excursion">Excursion</a></ul> <span>HTML & CSS</span>
-        <img src="images/excursionSS.png">
-      </li>
-      <li>
-        <ul><a href="https://github.com/Gonzobonzogit/rps">Rock, Paper, Scissors</a></ul> <span>HTML, CSS, JavaScript</span>
-        <img src="images/rps.png">
-      </li>
-      <li>
-        <ul><a href="https://github.com/Gonzobonzogit/FastfetchConfigVault"> FastFetch Configurations</a></ul> <span>JSON & Shell</span>
-        <img src="images/fastfetchExample.png">
-      </li>
+      <ul>
+        <li><a href="https://github.com/Gonzobonzogit/excursion">Excursion</a></li> <span>HTML & CSS</span>
+        <br>
+        <img src="../images/excursionSS.png" width="200" height="200">
+      </ul>
+      <ul>
+        <li><a href="https://github.com/Gonzobonzogit/rps">Rock, Paper, Scissors</a></li> <span>HTML, CSS, JavaScript</span>
+        <br>
+        <img src="../images/rps.png " width="200" height="200">
+      </ul>
+      <ul>
+        <li><a href="https://github.com/Gonzobonzogit/FastfetchConfigVault"> FastFetch Configurations</a></li> <span>JSON & Shell</span>
+        <br>
+        <img src="../images/fastfetchExample.png" width="200" height="200">
+      </ul>
       <ul>
         <li><a href="https://github.com/Gonzobonzogit/linux-quiz">Linux Themed Quiz</a></li><span>HTML, CSS, JavaScript</span>
-        <img src="images/linuxQuiz.png">
+        <br>
+        <img src="../images/linuxQuiz.png" width="200" height="200">
       </ul>
+<br>
     <div ="group">
       <h2>Group Project</h2>
       <p>This project was a group effort by myself, Aaron Primmer, and Ken Vermillion.  I worked on the, development server, the logic, the dynamic window, and basic layout.  Aaron was in charge of styling, and helped me debug the flight search function. While Ken worked on our debugging phase.</p>
       <ul>
         <li><a href="https://github.com/Gonzobonzogit/DAWAY">DayAway</a></li> <span>HTML, CSS, JavaScript, ExpressJS</span>
-        <span><img src="/home/gonzo/Projects/gonzo-codes/images/Dayaway1.png"> <img src="/home/gonzo/Projects/gonzo-codes/images/Dayaway2.png"></span>
+        <br>
+        <span><img src="../images/Dayaway1.png" width="200" height="200"> <img src="../images/Dayaway2.png" width="200" height="200"></span>
       </ul>
+    </div>
+<br>
+    <div class="certificates">
+      <h2 class="certs">Certificates</h2>
+      <p>The following list is to show the current certficates for courses I have completed to date.</p>
+   <div class="cert-container">
+    <ul>
+      <li>
+        <a href="../images/certs/learn-html-cert.pdf" target="_blank"> HTML
+          <br>
+          <img src="../images/certs/HTMl.png" alt="learn html" style="width: 200px; border: 1px solid #ccc; cursor: pointer;">
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="../images/certs/gonzobonzo_html_css_git.pdf" target="_blank"> HTML, CSS, git
+        <br>
+          <img src ="../images/certs/HTMLcssGIT.png" alt="HTML, CSS, git Cert" style="width: 200px; border: 1px solid #ccc; cursor: pointer;">
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="../images/certs/JavaScript-Fundementals.pdf" target="_blank"> JavaScript Fundementals
+          <br>
+          <img src="../images/certs/learnBasicsJS.png" alt="fundamentals JS Cert" style="width: 200px; border: 1px solid #ccc; cursor: pointer;">
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="../images/certs/learnJavaScript.pdf" target="_blank"> JavaScript
+          <br>
+          <img src="../images/certs/learnJS.png" alt="JavaScript Cert" style="width: 200px; border: 1px solid #ccc; cursor: pointer;">
+        </a>  
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a  href="../images/certs/SQL.pdf" target="_blank"> SQL
+          <br>
+          <img src="../images/certs/learnSQL.png" alt="sql cert preview" style="width: 200px; border: 1px solid #ccc; cursor: pointer;">
+        </a>
+      </li>
+    </ul>
     </div>
     <footer>
       <h6>Created by Gonzo &copy</h6>
