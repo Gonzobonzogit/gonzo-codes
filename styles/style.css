@@ -1,25 +1,9 @@
-:root{
-    --color-bg:#9ABCD3;
-    --color-surface: #1a1d2e;
-    --color-accent:#672FEC;
-    --color-accent-light:#9ABCD3;
-    --color-text:#e2e8f0;
-    --color-muted:#8892b0;
 
-    --sm-space:0.5rem;
-    --md-space:1rem;
-    --lg-space:2rem;
-    --xl-space:4rem;
-
-    --border-radius: 12px;
-    --heading-font: 'Fira Code', monospace;
-    --body-font: 'IBM Plex Sans', sans-serif;
-}
 
 *,*::before, *::after{
     box-sizing: border-box;
-    margin: 0;
-    padding: 1;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -32,67 +16,168 @@
 }
 
 header{
-    padding:var(--xl-space) 0 var(--lg-space);
+    padding:1rem 0 2rem;
     border-bottom:1px dotted #000;
 }
 
 .name{
-    background-color:var(--color-accent-light);
+    background-color:#9ABCD3;
     border-bottom:2px solid #000;
     border-left: 2px solid #000;
-    font-family:var(--heading-font);
+    font-family:Fira Code, monospace;
     letter-spacing:-0.02em
-    color:var(--color-accent);
+    color:#ffffff;
     font-size: clamp(1.5rem, 5vw, 3.5rem);
 
 }
 
 
 .lgndInDaM8king{
-    color: var(--color-muted);
+    padding-top:1rem;
+    color: #8892b0;
     font-size: 1.5rem;
     font-weight: 400;
-    margin-top: var(--sm-space);
+    margin-top: 0.5rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
 }
 
-.description{
-    padding-top: var(--md-space);
-    padding-bottom: var(--lg-space);
+.description-title{
+    padding-top: 1rem;
+    padding-bottom: 2px;
+    margin-bottom:10px;
+    border-bottom: 2px solid #000;
+    border-left:2px solid #000;
+    font-family:Fira Code, monospace;
+    font-size: 1.5rem;
 }
 
 body{
-    background-color:var(--color-bg);
-    color: var(--color-text);
-    font-family:var(--body-font);
+    background-color:#9ABCD3;
+    color: #e2e8f0;
+    font-family:IBM Plex Sans , sans-serif;
     line-height:1.6;
     max-width: 900px;
     margin:0 auto;
-    padding:var(lg-space)
+    padding:25px;
+
 }
 
 .selfie {
-    margin-top: var(--lg-space);
+    margin-top: 3rem;
     border: 2px solid #000;
     border-radius: 99px;
 }
 
+.bio-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14px;
 
+}
 
 .bio {
-    color:var(--color-surface)
-    border-radius:5px;
+    color:#1a1d2e;
     border: 2px solid #000;
     background-color: #627FEC;
-    font-family:var(--body-font);
+    font-family:IBM Plex Sans , sans-serif;
+    padding:2px;
+    margin: 3px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#hobby-Cont{
+    margin-top:8px;
+    margin-bottom: 8px;
+    padding: 10px 50px 20px;
+    border: 2px solid #000;
+    background-color: #854F93;
+    color: #000;
+    width:fit-content;
+    border-radius: 15px;
+}
+
+.hobstitle{
+    border-bottom: 2px dotted #000;
+    padding-left:10px;
+    padding-right:20px;
 
 
 }
 
+.skillz-container{
+    display: flex;
+
+}
+
+
+
+
+#skillz{
+    padding: 2px;
+    padding-right: 15px;
+    margin: 1px;
+    border: 2px dotted #000;
+    border-radius: 7px;
+    width: fit-content;
+
+}
+
+
+.hobbies{
+    position: inherit;
+}
+
+.contacts{
+    display:grid;
+    width:fit-content;
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid #000;
+    background-color:#e2e8f0;
+    color: #000;
+    border-radius: 15px;
+
+}
+
+#tres-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+
+
+
+#projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0px;
+
+}
+
+.project-script{
+    display: flex;
+    align-items: flex-start;
+}
+
+.project-script{
+    display: flex;
+    align-items: flex-start;
+}
+
+
 
 .cert-container {
-    display:inline-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 ul{
