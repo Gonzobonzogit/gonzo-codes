@@ -71,7 +71,8 @@ body{
 }
 
 .bio-wrapper{
-    width: 735px;
+    width: 700px;
+    min-width: 0;
 }
 
 
@@ -114,7 +115,9 @@ body{
 
 .skillz-container{
     display: flex;
-
+    flex-direction: column;
+    list-style-type: none;
+    align-items: flex-start;
 }
 
 
@@ -126,6 +129,7 @@ body{
     margin: 1px;
     border: 2px dotted #000;
     border-radius: 7px;
+    list-style: none;
     width: fit-content;
 
 }
@@ -133,6 +137,7 @@ body{
 
 .hobbies{
     position: inherit;
+    list-style:  none;
 }
 
 .contacts{
@@ -154,6 +159,17 @@ body{
     align-items: flex-start;
     gap: 16px;
     width: 100%;
+    margin-top: 16px;
+}
+
+#projects-container ul:nth-child(odd){
+    align-self: start;
+    margin-top: 0px;
+}
+
+#projects-container ul:nth-child(even){
+    align-self: end;
+    margin-top: 60px;
 }
 
 
@@ -169,39 +185,48 @@ body{
 
 .project-script{
     display: flex;
+    flex-direction: column:
     align-items: flex-start;
 }
 
 #excur{
     border: 2px solid #000;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 #ffex{
     border: 2px solid #000;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 #rpsPNG{
     border: 2px solid #000;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 #nixnerd{
     border: 2px solid #000;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 #DAWAY{
     border: 2px solid #000;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 
 .cert-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     padding: 10px;
+    marign: 5px;
+    border: 2px solid #000;
+}
+
+.ficate{
+    list-style: none;
+    border-radius: 50%;
 }
 
 ul{
