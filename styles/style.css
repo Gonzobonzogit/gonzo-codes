@@ -162,19 +162,19 @@ body{
     margin-top: 16px;
 }
 
-#projects-container ul:nth-child(odd){
+#pjctlst li:nth-child(odd){
     align-self: start;
     margin-top: 0px;
 }
 
-#projects-container ul:nth-child(even){
+#pjctlst li:nth-child(even){
     align-self: end;
     margin-top: 60px;
 }
 
 
 
-#projects-container{
+#pjctlst{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -185,7 +185,7 @@ body{
 
 .project-script{
     display: flex;
-    flex-direction: column:
+    flex-direction: column;
     align-items: flex-start;
 }
 
@@ -209,9 +209,23 @@ body{
     border-radius: 50%;
 }
 
+#guess{
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
 #DAWAY{
     border: 2px solid #000;
     border-radius: 50%;
+}
+
+#dock{
+    border-radius: 25px 25px 25px 25px;
+}
+
+#dock1{
+    border-radius: 50%;
+    border: 2px solid #000;
 }
 
 
@@ -220,7 +234,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     padding: 10px;
-    marign: 5px;
+    margin: 5px;
     border: 2px solid #000;
 }
 
