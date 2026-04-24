@@ -11,8 +11,8 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100px;
-    height:100px;
+    width: auto;
+    height: 400px;
 }
 
 header{
